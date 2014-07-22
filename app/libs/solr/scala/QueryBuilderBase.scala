@@ -84,7 +84,7 @@ trait QueryBuilderBase[Repr <: QueryBuilderBase[Repr]] {
    * @param field name 
    * @param value 
    */
-  def setParamter(field:String,value:String ): Repr = {
+  def setParameter(field:String,value:String ): Repr = {
        val ret = copy()
       ret.solrQuery.setParam(field, value)
     ret
@@ -220,12 +220,6 @@ trait QueryBuilderBase[Repr <: QueryBuilderBase[Repr]] {
         }
         case _ => {
            toList(response.getResults())
-//          val groupResponse = response.getGroupResponse()
-//          groupResponse.getValues().asScala.map { groupCommand =>
-//            groupCommand.getValues().asScala.map { group =>
-//              toList(group.getResult())
-//            }.flatten
-//          }.flatten.toList
         }
       }
     }

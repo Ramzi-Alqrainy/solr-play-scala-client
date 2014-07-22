@@ -13,7 +13,6 @@ class SolrClient(url: String)
             parser: ExpressionParser = new DefaultExpressionParser()) {
 
   private val server = factory(url)
-  //initializer(server)
 
   /**
    * Shutdown this solr client to release allocated resources.
