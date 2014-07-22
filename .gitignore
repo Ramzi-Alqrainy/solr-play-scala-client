@@ -15,3 +15,24 @@ project/plugins/project/
 # Scala-IDE specific
 .scala_dependencies
 .worksheet
+
+
+lib/play-scala.jar
+lib/play-scala-compiler.jar
+.DS_Store
+test-result
+tmp
+logs
+eclipse
+.#*
+*~
+*.~*
+dist
+*.pyc
+documentation/api
+samples-and-tests/i-am-a-developer/i-am-working-here
+.scala_dependencies
+h2
+.classpath
+.project
+.settings
